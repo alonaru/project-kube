@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Fetch AWS credentials from environment variables
 AWS_ACCESS_KEY = os.getenv("AWS_ACCESS_KEY_ID")
 AWS_SECRET_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
-REGION = "us-west-1"
+REGION = "eu-west-1"
 
 # Initialize Boto3 clients
 session = boto3.Session(
