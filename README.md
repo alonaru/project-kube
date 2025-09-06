@@ -6,8 +6,12 @@ This project contains a Python application and a Dockerfile for containerized de
 
 ### Prerequisites
 
-- Docker installed on your machine
-- Python application files and `requirements.txt` present in the project directory
+- **Docker** must be installed on your machine.  
+  If Docker is not installed, visit [docker.com](https://www.docker.com/products/docker-desktop/) and follow the instructions for your operating system.
+- **Git** is recommended to be installed on your machine.  
+  Git allows you to easily clone the application directly into your instance or container.  
+  If Git is not installed, download it from [git-scm.com](https://git-scm.com/downloads) and follow the installation steps for your OS.
+- Python application files and `requirements.txt` should be present in the project directory.
 
 ### How to Build the Docker Image
 
@@ -29,6 +33,11 @@ This project contains a Python application and a Dockerfile for containerized de
    ```
    http://<host_ip>:5001/
    ```
+
+### Automation Recommendation
+
+For a more automated and repeatable deployment, it is recommended to use **Ansible**.  
+Ansible can automatically install Docker and Git, clone your repository, build the Docker image, and run the container with minimal manual intervention.
 
 ### Notes
 
