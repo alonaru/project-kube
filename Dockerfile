@@ -18,4 +18,4 @@ COPY . .
 
 EXPOSE 5001
 
-CMD ["python", "create_EC2.py"]
+CMD ["python", "describe_resources.py"]
